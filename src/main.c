@@ -55,7 +55,7 @@ void on_reshape(int w, int h)
   // Set up the Projection transformation
   glMatrixMode(GL_PROJECTION);
   glLoadIdentity();
-  gluPerspective(90, (GLfloat)w/(GLfloat)h, 0.0, 5.0);
+  gluPerspective(90, (GLfloat)w/(GLfloat)h, 0.0001, 1000.0);
 
   // Switch to Model/view transformation for drawing objects
   glMatrixMode(GL_MODELVIEW);
